@@ -1,0 +1,9 @@
+c:\users\hp-pc\documents\visual studio 2012\Projects\encryption\encryption\bin\Debug\encryption.exe.config
+c:\users\hp-pc\documents\visual studio 2012\Projects\encryption\encryption\bin\Debug\encryption.exe
+c:\users\hp-pc\documents\visual studio 2012\Projects\encryption\encryption\bin\Debug\encryption.pdb
+c:\users\hp-pc\documents\visual studio 2012\Projects\encryption\encryption\obj\Debug\encryption.csprojResolveAssemblyReference.cache
+c:\users\hp-pc\documents\visual studio 2012\Projects\encryption\encryption\obj\Debug\encryption.Form1.resources
+c:\users\hp-pc\documents\visual studio 2012\Projects\encryption\encryption\obj\Debug\encryption.Properties.Resources.resources
+c:\users\hp-pc\documents\visual studio 2012\Projects\encryption\encryption\obj\Debug\encryption.csproj.GenerateResource.Cache
+c:\users\hp-pc\documents\visual studio 2012\Projects\encryption\encryption\obj\Debug\encryption.exe
+c:\users\hp-pc\documents\visual studio 2012\Projects\encryption\encryption\obj\Debug\encryption.pdb
