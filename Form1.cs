@@ -68,7 +68,8 @@ namespace RSA
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }        
+        }
+        
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -78,9 +79,20 @@ namespace RSA
             MD5encrypt = false;
         }
 
+
+
         private void button4_Click(object sender, EventArgs e)
         {
-
+            if (RSAencrypt == true)
+            {
+                
+                textBox3.Text = encryption.RSACrypto.Decrypt(encryption.RSACrypto.Encrypt(textBox1.Text));
+               
+            }
+            else
+            {
+                MessageBox.Show("Please decrypt using the same method");
+            }
         }
     }
 }

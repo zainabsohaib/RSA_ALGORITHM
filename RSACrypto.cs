@@ -46,5 +46,36 @@ namespace encryption
                 }
             }
         }
+
+        public static string Decrypt(string textToDecrypt)
+        {
+            // RSACryptoServiceProvider cryptoServiceProvider_ = new RSACryptoServiceProvider(2048);
+            var cryptoServiceProvider = new RSACryptoServiceProvider(2048);
+
+            var privateKey = cryptoServiceProvider.ExportParameters(true);
+            var publicKey = cryptoServiceProvider.ExportParameters(false);
+
+            string privateKeyString = GetKeyString(privateKey);
+    
+
+            var bytesToDescrypt = Encoding.UTF8.GetBytes(textToDecrypt);
+
+            using (var rsa = new RSACryptoServiceProvider())
+            {
+                try
+                {
+                    rsa.FromXmlString(privateKeyString);
+
+                    var resultBytes = Convert.FromBase64String(textToDecrypt);
+                    var decryptedBytes = rsa.Decrypt(resultBytes, true);
+                    var decryptedData = Encoding.UTF8.GetString(decryptedBytes);
+                    return decryptedData.ToString();
+                }
+                finally
+                {
+                    rsa.PersistKeyInCsp = false;
+                }
+            }
+        }
     }
 }
